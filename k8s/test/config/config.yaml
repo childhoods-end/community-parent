@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: common-config
+data:
+  SPRING_PROFILES_ACTIVE: test
+  SERVER_PORT: "80"
+  EMAIL_SERVICE_ENDPOINT: http://mail-service
+  POST_SERVICE_ENDPOINT: http://post-service
+  USER_SERVICE_ENDPOINT: http://user-service
+  USER_DATASOURCE_URL: jdbc:mysql://localhost:3306/community?characterEncoding=utf-8&useSSL=false&serverTimezone=Hongkong
+  USER_DATASOURCE_USERNAME: root
+  USER_DATASOURCE_PASSWORD: root
+  POST_DATASOURCE_URL: jdbc:mysql://localhost:3306/community?characterEncoding=utf-8&useSSL=false&serverTimezone=Hongkong
+  POST_DATASOURCE_USERNAME: root
+  POST_DATASOURCE_PASSWORD: root
